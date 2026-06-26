@@ -7,6 +7,11 @@
 <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
-    <im> scr="index.html.." alt="imagem ilustrativa da index.html..">
+    <im> scr="index.html.." alt="imagem ilustrativa da index.html..">    
+    <img> <Imagine class="oii].png"></Imagine>
+    <p>Este projeto visa criação de imaginção</p>
+    <li>Permiçao de criaçao de desenhos</li>
+    <li>Permiçao para colar imagem</li>
+    </ul>
 </body>
 </html>
