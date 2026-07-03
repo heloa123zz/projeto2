@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Imagine</title>
+<head>
+    <title>IMAGINE</title>
     </head>
-</html>
+    <link rel="stylesheet" href="Imagine"
 <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
     <im> scr="index.html.." alt="imagem ilustrativa da index.html..">    
-    <img> <Imagine class="oii].png"></Imagine>
+    <img> <Imagine class="oii .png"></Imagine>
     <p>Este projeto visa criação de imaginção</p>
     <li>Permiçao de criaçao de desenhos</li>
     <li>Permiçao para colar imagem</li>
@@ -16,8 +16,5 @@
     <buttons>INSTAGRAM</buttons>
     <buttons>FACEBOOK</buttons>
 </body>
- <body {
-    background-color: red;
-    color: black;
-}
+ 
 </html>
