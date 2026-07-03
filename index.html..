@@ -16,4 +16,8 @@
     <buttons>INSTAGRAM</buttons>
     <buttons>FACEBOOK</buttons>
 </body>
+ <body {
+    background-color: red;
+    color: black;
+}
 </html>
