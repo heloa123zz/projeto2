@@ -1,7 +1,33 @@
 from openai import OpenAI
+from google.colab import userdata
+# Buscando a chave de forma segura
+API_KEY = userdata.get('OPEN_ROUTER')
+# Configurando o cliente com a variável segura
+client = OpenAI( base_url="https://openrouter.ai/api/v1",
+  api_key=API_KEY,)
+response = client.responses.create(
+  model="openai/gpt-4o-mini:free",
+  instructions="""Você é um mentor de carreiras.
+Liste profissões que o usuário pode fazer uma graduação que tem correlação.
+Regras:
+1. Liste profissões reais no Brasil
+2. Seja breve.
+3. Não use emojis.
 
-# Configurando o cliente com a URL do OpenRouter e a nossa chave de API
-client = OpenAI(
-  base_url="https://openrouter.ai/api/v1",
-  api_key="SUA_CHAVE_API_AQUI", # Substitua pela chave que você copiou
+""",
 )
+prompt = input('Quais são as suas afinidades/interesses? ')
+# ... (configuração do client)
+  input=prompt
+)
+  input="Eu gosto de nadar, jogar bola e viajar"
+)
+response = client.responses.create(
+  model="openai/gpt-os-200-free",
+  input="Oi"
+)
+
+print(response.output_text)
+print(f'Tokens de entrada: {response.usage.input_tokens}')
+print(f'Tokens de saída: {response.usage.output_tokens}')
+print(f'Total de tokens: {response.usage.total_tokens}')
