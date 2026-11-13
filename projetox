@@ -1,0 +1,7 @@
+from openai import OpenAI
+
+# Configurando o cliente com a URL do OpenRouter e a nossa chave de API
+client = OpenAI(
+  base_url="https://openrouter.ai/api/v1",
+  api_key="SUA_CHAVE_API_AQUI", # Substitua pela chave que você copiou
+)
